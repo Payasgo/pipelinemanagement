@@ -1,0 +1,22 @@
+{
+	"name": "SqlServer1",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=MURALIYARLI;Initial Catalog=EMPLOYEE;User ID=kranthi",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_FOR_SQLSERVER_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "selfhostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
