@@ -1,0 +1,10 @@
+{
+	"name": "LS_FOR_SQLSERVER_AzureKeyVault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://azurekeysvalute.vault.azure.net/"
+		}
+	}
+}
