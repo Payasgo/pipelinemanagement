@@ -1,0 +1,19 @@
+{
+	"name": "Ds_One_table_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_CLOUD_AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "copy"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
