@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azurepipelinemanagement"
+		},
+		"SqlServer1_connectionString": {
+			"value": "Integrated Security=False;Data Source=MURALIYARLI;Initial Catalog=EMPLOYEE;User ID=kranthi"
+		},
+		"LS_CLOUD_AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"LS_FOR_SQLSERVER_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://azurekeysvalute.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
