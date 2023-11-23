@@ -1,0 +1,9 @@
+{
+	"name": "azurepipelinemanagement",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a41a1a14-17b4-4345-a22e-084f0800a3d7",
+		"tenantId": "2db0e13c-89f2-4a67-88ce-504c6fb70607"
+	}
+}
