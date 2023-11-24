@@ -5,14 +5,20 @@
 		"factoryName": {
 			"value": "azurepipelinemanagement"
 		},
-		"SqlServer1_connectionString": {
-			"value": "Integrated Security=False;Data Source=MURALIYARLI;Initial Catalog=EMPLOYEE;User ID=kranthi"
-		},
 		"LS_CLOUD_AzureBlobStorage_connectionString": {
 			"value": ""
 		},
+		"LS_For_Snowflake_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": "Integrated Security=False;Data Source=MURALIYARLI;Initial Catalog=EMPLOYEE;User ID=kranthi"
+		},
 		"LS_FOR_SQLSERVER_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://azurekeysvalute.vault.azure.net/"
+		},
+		"LS_Snowflake_AzureBlobStorage_sasUri": {
+			"value": ""
 		}
 	}
 }

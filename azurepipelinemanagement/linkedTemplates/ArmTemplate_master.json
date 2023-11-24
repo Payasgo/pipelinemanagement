@@ -7,18 +7,26 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "azurepipelinemanagement"
 		},
+		"LS_CLOUD_AzureBlobStorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_CLOUD_AzureBlobStorage'"
+		},
+		"LS_For_Snowflake_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_For_Snowflake'"
+		},
 		"SqlServer1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'SqlServer1'",
 			"defaultValue": "Integrated Security=False;Data Source=MURALIYARLI;Initial Catalog=EMPLOYEE;User ID=kranthi"
 		},
-		"LS_CLOUD_AzureBlobStorage_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'LS_CLOUD_AzureBlobStorage'"
-		},
 		"LS_FOR_SQLSERVER_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://azurekeysvalute.vault.azure.net/"
+		},
+		"LS_Snowflake_AzureBlobStorage_sasUri": {
+			"type": "secureString",
+			"metadata": "Secure string for 'sasUri' of 'LS_Snowflake_AzureBlobStorage'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -50,11 +58,17 @@
 					"LS_CLOUD_AzureBlobStorage_connectionString": {
 						"value": "[parameters('LS_CLOUD_AzureBlobStorage_connectionString')]"
 					},
+					"LS_For_Snowflake_connectionString": {
+						"value": "[parameters('LS_For_Snowflake_connectionString')]"
+					},
 					"SqlServer1_connectionString": {
 						"value": "[parameters('SqlServer1_connectionString')]"
 					},
 					"LS_FOR_SQLSERVER_AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_FOR_SQLSERVER_AzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"LS_Snowflake_AzureBlobStorage_sasUri": {
+						"value": "[parameters('LS_Snowflake_AzureBlobStorage_sasUri')]"
 					}
 				}
 			},
