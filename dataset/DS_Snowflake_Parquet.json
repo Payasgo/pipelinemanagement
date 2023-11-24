@@ -1,0 +1,21 @@
+{
+	"name": "DS_Snowflake_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Snowflake_AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "empinfo.parquet",
+				"folderPath": "dbo/empinfo",
+				"container": "copy"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
